@@ -4,6 +4,11 @@ from people.models import People
 
 
 class PeopleViewSet(viewsets.ModelViewSet):
+    """
+    People ViewSet
+
+    Implements basic Get, Post, Delete, Patch API for People model
+    """
     permission_classes = [
         permissions.AllowAny
     ]
