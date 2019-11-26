@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development ./people_manager/frontend/src/index.js --output ./people_manager/frontend/static/frontend/main.js",
+    "dev": "webpack --mode development --watch ./people_manager/frontend/src/index.js --output ./people_manager/frontend/static/frontend/main.js",
     "build": "webpack --mode production ./people_manager/frontend/src/index.js --output ./people_manager/frontend/static/frontend/main.js"
   },
   "repository": {

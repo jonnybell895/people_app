@@ -1,9 +1,9 @@
-from rest_framework import permissions, viewsets
+from rest_framework import permissions, viewsets, mixins
 from .serializers import PeopleSerializer
 from people.models import People
 
 
-class PeopleViewSet(viewsets.ModelViewSet):
+class PeopleViewSet(viewsets.ModelViewSet, mixins.ListModelMixin):
     """
     People ViewSet
 
