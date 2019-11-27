@@ -17,11 +17,12 @@ I created some helper scripts to make it easier to setup and run:
 3. `run_server.sh`
     - Runs server
 
-Once the server is running it can be accesed via a browser by going to 
+- Once the server is running it can be accesed via a browser by going to 
 [localhost port 8000](http://127.0.0.1:8000]) or if configured in `/etc/hosts` http://www.people-app.com
-
+- Test data can be loaded into the server from the fixture files (e.g `python manage.py loaddata test_people_2`)
 - The API can be queried using `http://127.0.0.1:8000/people/`
 - The optional parameter `?order_by=email` can be added to sort the results (sorts by name by default)
+- Add `-` to reverse ordering (e.g `?order_by=-age`)
 
 ---
 ## Installation procedure (for reference)

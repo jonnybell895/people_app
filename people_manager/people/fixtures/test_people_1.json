@@ -6,7 +6,7 @@
       "name": "TestPerson One",
       "email": "p1@test.com",
       "age": 21,
-      "address": "1 Arthur Street",
+      "address": "1 A Street",
       "balance": 100.1
     }
   },
@@ -17,7 +17,7 @@
       "name": "TestPerson Two",
       "email": "p2@test.com",
       "age": 22,
-      "address": "2 Arthur Street",
+      "address": "2 Street",
       "balance": 100.2
     }
   }

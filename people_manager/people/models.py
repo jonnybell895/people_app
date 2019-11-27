@@ -14,4 +14,4 @@ class People(models.Model):
     address = models.CharField(max_length=200)
 
     class Meta:
-        ordering = ["name", "email"]  # Allow order by name or email
+        ordering = ["name", "email"]
