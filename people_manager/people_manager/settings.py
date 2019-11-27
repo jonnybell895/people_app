@@ -25,7 +25,9 @@ SECRET_KEY = '96ty^g2t*bjr(hifkum@sa_23)v1^32n#=%t6f=e^f3q3y=n&h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.people-app.com'
+]
 
 
 # Application definition
