@@ -40,4 +40,5 @@ This section is a record of the commandline steps carried out to setup the envir
     - `npm i -D webpack webpack-cli`
     - `npm i -D @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties`
     - `npm i react react-dom prop-types`
+    - `npm i weak-key --save-dev`
 
