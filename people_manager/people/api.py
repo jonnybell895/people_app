@@ -12,5 +12,7 @@ class PeopleViewSet(viewsets.ModelViewSet, mixins.ListModelMixin):
     permission_classes = [
         permissions.AllowAny
     ]
-    queryset = People.objects.all()
     serializer_class = PeopleSerializer
+
+    def get_queryset(self):
+        return People.objects.all().order_by(self.request.GET.get('order_by', 'name'))

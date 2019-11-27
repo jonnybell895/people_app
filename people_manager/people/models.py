@@ -12,3 +12,6 @@ class People(models.Model):
     age = models.PositiveIntegerField()
     balance = models.FloatField()
     address = models.CharField(max_length=200)
+
+    class Meta:
+        ordering = ["name", "email"]  # Allow order by name or email
