@@ -6,13 +6,13 @@ import key from "weak-key";
 const Table = ({ data }) =>
   !data.length ? (<p>Nothing to show</p>) : (
     <div className="column">
-      <h2 className="subtitle">
+      <h4 className="subtitle">
         Showing <strong>{data.length} items</strong>
-      </h2>
+      </h4>
       <table className="table is-striped">
         <thead>
           <tr>
-            {Object.entries(data[0]).map(el => <th key={key(el)}>{el[0]}</th>)}
+            {Object.entries(data[0]).map(el => <th key={key(el)}>{el[0].charAt(0).toUpperCase() + el[0].slice(1)}</th>)}
           </tr>
         </thead>
         <tbody>
