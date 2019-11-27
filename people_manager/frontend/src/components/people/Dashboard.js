@@ -6,7 +6,6 @@ import People from './People';
 export default function Dashboard() {
   return (
     <Fragment>
-      <Form />
       <People />
     </Fragment>
   )

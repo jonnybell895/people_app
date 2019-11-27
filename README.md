@@ -5,21 +5,26 @@ An Application built to manage peoples' details and data.
 The Backend of the Application is built using the Python Framework Django.
 
 ## Frontend
-The Frontend of the Application is built using React
+The Frontend of the Application is built using React and Babel for compiling/transforming JavaScript
 
 ## Usage
-I created helper scripts to make it easier to setup and run
+I created some helper scripts to make it easier to setup and run:
 
 1. `make_env.sh`
     - Creates the Python environment and installs requirements
-2. `run_server`
-    - Runs server, will call `make_env` script if environment does not exist
+2. `migrate.sh`
+    - Creates DB and/or applies necessary migrations
+3. `run_server.sh`
+    - Runs server
 
 Once the server is running it can be accesed via a browser by going to 
 [localhost port 8000](http://127.0.0.1:8000]) or if configured in `/etc/hosts` http://www.people-app.com
 
+- The API can be queried using `http://127.0.0.1:8000/people/`
+- The optional parameter `?order_by=email` can be added to sort the results (sorts by name by default)
+
 ---
-### Installation procedure (for reference)
+## Installation procedure (for reference)
 
 ---
 This section is a record of the commandline steps carried out to setup the environment and dependencies
@@ -31,8 +36,6 @@ This section is a record of the commandline steps carried out to setup the envir
 - Created `requirements.txt` file and installed:
     - `pip install -r requirements`
 - Added `127.0.0.1  www.people-app.com` to my `/etc/hosts` file to test Django ALLOWED_HOSTS in browser
-- 
-
 
 ##### Installing UI components:
 - Installed Node (using brew on OSX)

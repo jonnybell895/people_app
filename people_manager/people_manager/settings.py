@@ -26,6 +26,7 @@ SECRET_KEY = '96ty^g2t*bjr(hifkum@sa_23)v1^32n#=%t6f=e^f3q3y=n&h'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'www.people-app.com'
 ]
 
