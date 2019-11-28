@@ -1,0 +1,46 @@
+[
+  {
+    "pk": 101,
+    "model": "people.people",
+    "fields": {
+      "name": "TestPerson A",
+      "email": "z@test.com",
+      "age": 81,
+      "address": "64 A Street",
+      "balance": 100.1
+    }
+  },
+  {
+    "pk": 102,
+    "model": "people.people",
+    "fields": {
+      "name": "TestPerson B",
+      "email": "y@test.com",
+      "age": 22,
+      "address": "52 A Street",
+      "balance": 101.2
+    }
+  },
+  {
+    "pk": 103,
+    "model": "people.people",
+    "fields": {
+      "name": "TestPerson C",
+      "email": "x@test.com",
+      "age": 33,
+      "address": "73 A Street",
+      "balance": 100.3
+    }
+  },
+  {
+    "pk": 104,
+    "model": "people.people",
+    "fields": {
+      "name": "TestPerson D",
+      "email": "w@test.com",
+      "age": 24,
+      "address": "4 A Street",
+      "balance": 103.4
+    }
+  }
+]
